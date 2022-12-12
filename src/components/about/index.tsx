@@ -1,7 +1,9 @@
 import Title from "components/common/title"
 import Layout from "components/layout"
 
+import EducationAndExperience from "./education-and-experience"
 import PersonalDetails from "./personal-details"
+import Skills from "./skills"
 
 interface AboutProps {
   select: string
@@ -17,9 +19,9 @@ const About = (props: AboutProps) => {
 
       <PersonalDetails select={select} hover={hover} />
 
-      {/* <EducationAndExperience select={select} /> */}
+      <EducationAndExperience select={select} />
 
-      {/* <Skills select={select} /> */}
+      <Skills select={select} />
     </Layout>
   )
 }
