@@ -27,7 +27,7 @@ const HeaderMobile = (props: HeaderMobileProps) => {
       as='header'
       position='fixed'
       zIndex={9}
-      top={{ base: "15px", md: "30px" }}
+      top={{ base: "20px", md: "30px" }}
       left={{ base: "15px", md: "30px" }}
     >
       <Circle
