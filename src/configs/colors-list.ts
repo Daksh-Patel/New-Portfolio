@@ -27,7 +27,7 @@ export const Colors = [
     id: 5,
     label: "color5",
     color: "#aa00fd",
-    hover: "#9818d6",
+    hover: "#74239c",
   },
   {
     id: 6,

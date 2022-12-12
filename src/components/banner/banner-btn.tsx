@@ -25,6 +25,7 @@ const BannerBtn = (props: BannerBtnProps) => {
         label='about-btn'
         background='#666666'
         bgColor='#444444'
+        mb={{ base: "15px", md: "0" }}
       />
 
       <PrimaryButton

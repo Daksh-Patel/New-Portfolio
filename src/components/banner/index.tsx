@@ -19,6 +19,7 @@ import { MediaList } from "configs/media-list"
 
 import BannerBtn from "./banner-btn"
 import Media from "./media"
+import ScrollDownButton from "./scroll-down-btn"
 
 interface BannerProps {
   setSelect: (select: string) => void
@@ -157,7 +158,9 @@ const Banner = (props: BannerProps) => {
             </Box>
           </HStack>
 
-          <Show above='md'>{/* <ScrollDown /> */}</Show>
+          <Show above='md'>
+            <ScrollDownButton />
+          </Show>
 
           <ColorSwitch
             hover={hover}

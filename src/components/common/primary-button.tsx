@@ -9,7 +9,7 @@ type ButtonProps = {
 }
 
 const PrimaryButton = (props: ButtonProps & BoxProps) => {
-  const { href, text, icon, label, background, bgColor } = props
+  const { href, text, icon, label, background, bgColor, mb } = props
 
   return (
     <Link
@@ -25,6 +25,7 @@ const PrimaryButton = (props: ButtonProps & BoxProps) => {
       fontWeight='semibold'
       borderRadius='26px'
       background={background}
+      mb={mb}
       position='relative'
       overflow='hidden'
       _after={{
