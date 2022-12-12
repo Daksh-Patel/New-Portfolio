@@ -2,9 +2,10 @@ import { FaUser } from "react-icons/fa"
 
 import ParagraphText from "components/common/paragraph-text"
 import PrimaryButton from "components/common/primary-button"
+import Layout from "components/layout"
 
 const HomePage = () => (
-  <>
+  <Layout>
     <PrimaryButton
       text='More About Me'
       icon={FaUser}
@@ -15,7 +16,7 @@ const HomePage = () => (
     />
 
     <ParagraphText text='Daksh Patel' />
-  </>
+  </Layout>
 )
 
 export default HomePage
