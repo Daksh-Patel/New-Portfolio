@@ -7,6 +7,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -14,7 +15,22 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "app/*": ["app/*"],
+      "assets/*": ["assets/*"],
+      "components/*": ["components/*"],
+      "configs/*": ["configs/*"],
+      "hooks/*": ["hooks/*"],
+      "layouts/*": ["layouts/*"],
+      "pages/*": ["pages/*"],
+      "services/*": ["services/*"],
+      "store/*": ["store/*"],
+      "theme/*": ["theme/*"],
+      "utils/*": ["utils/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "jest.config.js"],
+  "exclude": ["node_modules"]
 }
