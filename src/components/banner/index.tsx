@@ -17,6 +17,7 @@ import banner from "assets/images/home-banner.jpg"
 import ColorSwitch from "components/color-switch"
 import { MediaList } from "configs/media-list"
 
+import BannerBtn from "./banner-btn"
 import Media from "./media"
 
 interface BannerProps {
@@ -152,7 +153,7 @@ const Banner = (props: BannerProps) => {
 
               <Media select={select} media={MediaList} />
 
-              {/* <BannerBtn hover={hover} select={select} /> */}
+              <BannerBtn hover={hover} select={select} />
             </Box>
           </HStack>
 
