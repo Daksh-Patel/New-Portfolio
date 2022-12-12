@@ -18,6 +18,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.13",
     "@chakra-ui/react": "^2.4.3",
     "@chakra-ui/skip-nav": "^2.0.12",
     "@chakra-ui/theme-tools": "^2.0.14",

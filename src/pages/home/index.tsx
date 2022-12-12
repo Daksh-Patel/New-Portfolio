@@ -1,22 +1,11 @@
-import { FaUser } from "react-icons/fa"
+import { HStack } from "@chakra-ui/react"
 
-import ParagraphText from "components/common/paragraph-text"
-import PrimaryButton from "components/common/primary-button"
-import Layout from "components/layout"
+import SideBar from "components/sidebar"
 
 const HomePage = () => (
-  <Layout>
-    <PrimaryButton
-      text='More About Me'
-      icon={FaUser}
-      href='#about'
-      label='primary-btn'
-      background='#000000'
-      bgColor='red'
-    />
-
-    <ParagraphText text='Daksh Patel' />
-  </Layout>
+  <HStack justifyContent='flex-start' w='full'>
+    <SideBar />
+  </HStack>
 )
 
 export default HomePage
