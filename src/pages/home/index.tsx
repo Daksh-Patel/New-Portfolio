@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import { Box, HStack } from "@chakra-ui/react"
 
-import ColorSwitch from "components/color-switch"
+import Banner from "components/banner"
 import SideBar from "components/sidebar"
 
 const HomePage = () => {
@@ -14,7 +14,7 @@ const HomePage = () => {
       <SideBar select={select} hover={hover} />
 
       <Box w='full' m='0 !important'>
-        <ColorSwitch
+        <Banner
           hover={hover}
           setHover={setHover}
           select={select}
