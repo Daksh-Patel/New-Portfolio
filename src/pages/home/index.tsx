@@ -3,6 +3,7 @@ import { useState } from "react"
 import { Box, HStack } from "@chakra-ui/react"
 import { useScroll, motion } from "framer-motion"
 
+import About from "components/about"
 import Banner from "components/banner"
 import SideBar from "components/sidebar"
 
@@ -38,6 +39,8 @@ const HomePage = () => {
             select={select}
             setSelect={setSelect}
           />
+
+          <About select={select} hover={hover} />
         </Box>
       </HStack>
     </>
