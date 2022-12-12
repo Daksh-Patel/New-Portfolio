@@ -12,8 +12,15 @@ import {
 
 import HeaderDesktop from "./header-desktop"
 
-const HeaderMobile = () => {
+interface HeaderMobileProps {
+  select: string
+  hover: string
+}
+
+const HeaderMobile = (props: HeaderMobileProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
+
+  const { select, hover } = props
 
   return (
     <Box
@@ -28,9 +35,9 @@ const HeaderMobile = () => {
         aria-label='menu-button'
         onClick={onOpen}
         size={{ base: "40px", md: "50px" }}
-        // background={select}
+        background={select}
         transition='0.5s ease'
-        // _hover={{ background: hover }}
+        _hover={{ background: hover }}
       >
         <Icon
           as={HamburgerIcon}
@@ -54,7 +61,7 @@ const HeaderMobile = () => {
             }}
           />
 
-          <HeaderDesktop />
+          <HeaderDesktop select={select} />
         </DrawerContent>
       </Drawer>
     </Box>

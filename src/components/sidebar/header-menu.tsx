@@ -3,12 +3,12 @@ import { Icon, Link, VStack } from "@chakra-ui/react"
 import { HeaderMenuTypes } from "./types"
 
 interface HeaderMenuProps {
-  //   select: string
+  select: string
   dataList: HeaderMenuTypes[]
 }
 
 const HeaderMenu = (props: HeaderMenuProps) => {
-  const { dataList } = props
+  const { dataList, select } = props
 
   return (
     <VStack alignItems='flex-start' spacing={{ base: 4, md: 6, "2xl": 8 }}>
@@ -27,7 +27,7 @@ const HeaderMenu = (props: HeaderMenuProps) => {
           transition='all 0.5s ease'
           _hover={{
             textDecoration: "none",
-            // color: select,
+            color: select,
             letterSpacing: "3.5px",
           }}
         >
