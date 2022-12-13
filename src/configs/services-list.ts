@@ -1,4 +1,4 @@
-import { FaCode, FaHandshake, FaSearchengin } from "react-icons/fa"
+import { FaCode, FaCog, FaSearchengin } from "react-icons/fa"
 
 export const ServicesList = [
   {
@@ -10,13 +10,13 @@ export const ServicesList = [
   {
     id: 2,
     title: "Search Engine Optimization",
-    text: "SEO can be crucial to help people finding your organization. There are many factors search engines consider when ranking a website.",
+    text: "I'll make sure to optimize your site in a manner where your clients find you based on genuine searches and keywords.",
     icon: FaSearchengin,
   },
   {
     id: 3,
-    title: "Life time support",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida purus ipsum, a lacinia neque consequat eget.",
-    icon: FaHandshake,
+    title: "Web Optimization",
+    text: "Web optimization is the process of making web apps more user-friendly and visible to search engines.",
+    icon: FaCog,
   },
 ]
