@@ -5,6 +5,7 @@ import { useScroll, motion } from "framer-motion"
 
 import About from "components/about"
 import Banner from "components/banner"
+import Services from "components/services"
 import SideBar from "components/sidebar"
 
 const HomePage = () => {
@@ -41,6 +42,8 @@ const HomePage = () => {
           />
 
           <About select={select} hover={hover} />
+
+          <Services select={select} />
         </Box>
       </HStack>
     </>
