@@ -21,7 +21,7 @@ const BannerBtn = (props: BannerBtnProps) => {
       <PrimaryButton
         text='More About Me'
         icon={FaUser}
-        href='#portfolio'
+        href='#about'
         label='about-btn'
         background='#666666'
         bgColor='#444444'

@@ -14,6 +14,7 @@ const PrimaryButton = (props: ButtonProps & BoxProps) => {
   return (
     <Link
       href={href}
+      rel='preconnect'
       aria-label={label}
       px={{ base: "25px", md: "34px" }}
       py='12px'
