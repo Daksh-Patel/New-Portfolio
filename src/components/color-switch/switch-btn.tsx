@@ -29,11 +29,7 @@ const SwitchBtn = (props: SwitchBtnProps) => {
     : `${rotate} 2s infinite linear`
 
   const onSwitchClick = useCallback(() => {
-    setToggle(true)
-
-    if (toggle) {
-      setToggle(false)
-    }
+    setToggle(!toggle)
   }, [setToggle, toggle])
 
   return (
