@@ -1,20 +1,16 @@
-import { useState } from "react"
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable no-console */
+import { useState, useRef } from "react"
 
-import {
-  Alert,
-  AlertDescription,
-  AlertIcon,
-  AlertTitle,
-  Box,
-  Button,
-  SimpleGrid,
-  Spinner,
-} from "@chakra-ui/react"
+import { Box, Button, SimpleGrid, Spinner } from "@chakra-ui/react"
+import emailjs from "@emailjs/browser"
 import { SubmitHandler, useForm } from "react-hook-form"
 
 import ParagraphText from "components/common/paragraph-text"
 import FormInput from "components/form/form-input"
 import FormTextArea from "components/form/form-textarea"
+
+import Success from "./success"
 
 interface ContactFormProps {
   select: string
@@ -32,7 +28,10 @@ type ContactFormValues = {
 const ContactForm = (props: ContactFormProps) => {
   const { select, hover } = props
 
+  const form = useRef(null)
+
   const [thankYou, setThankYou] = useState<boolean>(false)
+  const [user, setUser] = useState<string>("")
 
   const {
     register,
@@ -43,37 +42,40 @@ const ContactForm = (props: ContactFormProps) => {
   })
 
   const onSubmit: SubmitHandler<ContactFormValues> = (data) => {
-    // eslint-disable-next-line no-console
-    console.log("data:", data)
+    setUser(data.name)
 
-    setThankYou(true)
+    return emailjs
+      .sendForm(
+        "service_ltqrkyo",
+        "project_template",
+        // @ts-ignore
+        form.current,
+        "_dx5kH8ZO8a4m0Vh5",
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          return setThankYou(!thankYou)
+        },
+        (error) => {
+          console.log(error)
+        },
+      )
   }
 
   return (
     <Box mb={{ base: "30px", md: "50px" }}>
       {thankYou ? (
-        <Alert
-          status='success'
-          variant='subtle'
-          flexDirection='column'
-          alignItems='center'
-          justifyContent='center'
-          textAlign='center'
-          height='200px'
-        >
-          <AlertIcon boxSize='40px' mr={0} />
-          <AlertTitle mt={4} mb={1} fontSize='lg'>
-            Form submitted!
-          </AlertTitle>
-          <AlertDescription maxWidth='sm'>
-            Thanks for submitting a Form. I will get back to you soon.
-          </AlertDescription>
-        </Alert>
+        <Success user={user} />
       ) : (
         <>
           <ParagraphText text='Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.' />
 
-          <form onSubmit={handleSubmit(onSubmit)} style={{ width: "100%" }}>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            ref={form}
+            style={{ width: "100%" }}
+          >
             <SimpleGrid
               columns={{ base: 1, md: 2 }}
               spacing={{ base: 18, md: 30 }}
@@ -140,6 +142,7 @@ const ContactForm = (props: ContactFormProps) => {
               isLoading={isSubmitting}
               loadingText='Submitting'
               spinner={<Spinner color='#FAFAFA' />}
+              spinnerPlacement='end'
               size={{ base: "md", md: "lg" }}
               color='white'
               textTransform='uppercase'

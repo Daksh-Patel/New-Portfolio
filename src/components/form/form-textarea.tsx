@@ -15,7 +15,7 @@ type FormInputProps = {
 
 const FormTextArea = forwardRef(
   ({ id, placeholder, error, select, ...rest }: FormInputProps, ref) => (
-    <FormControl isInvalid={!!error}>
+    <FormControl isInvalid={!!error} isRequired>
       <Textarea
         id={id}
         variant='unstyled'

@@ -13,7 +13,7 @@ import SocialMedia from "./social-media"
 
 interface ContactProps {
   select: string
-  //   hover: string
+  // hover: string
 }
 
 const Contact = (props: ContactProps) => {

@@ -15,7 +15,7 @@ type FormInputProps = {
 
 const FormInput = forwardRef(
   ({ id, placeholder, error, select, ...rest }: FormInputProps, ref) => (
-    <FormControl isInvalid={!!error}>
+    <FormControl isInvalid={!!error} isRequired>
       <Input
         id={id}
         variant='unstyled'
