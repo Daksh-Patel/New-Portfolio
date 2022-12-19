@@ -42,7 +42,7 @@ const Contact = (props: ContactProps) => {
           select={select}
           title='Email Me'
           href='mailto'
-          text='dakshpatel1520@gmail.com'
+          text='pateldaksh1520@gmail.com'
           icon={FaEnvelope}
         />
 

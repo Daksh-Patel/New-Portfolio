@@ -27,7 +27,7 @@ export const PersonalDetailsList = [
   {
     id: 5,
     title: "Email",
-    text: "dakshpatel1520@gmail.com",
+    text: "pateldaksh1520@gmail.com",
   },
   {
     id: 6,
