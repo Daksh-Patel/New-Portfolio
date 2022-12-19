@@ -17,7 +17,7 @@ const Success = () => (
   >
     <AlertIcon boxSize='40px' mr={0} />
     <AlertTitle mt={4} mb={1} fontSize='lg'>
-      Successfully Submitted!
+      Successfully Submitted🤩🎉🎊
     </AlertTitle>
     <AlertDescription maxWidth='sm'>
       Your message successfully sent. I will get back to you soon.
