@@ -49,7 +49,7 @@ const HomePage = () => {
 
           <Portfolio select={select} />
 
-          <Contact select={select} />
+          <Contact select={select} hover={hover} />
         </Box>
       </HStack>
     </>

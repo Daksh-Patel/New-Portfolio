@@ -31,7 +31,6 @@ const ContactForm = (props: ContactFormProps) => {
   const form = useRef(null)
 
   const [thankYou, setThankYou] = useState<boolean>(false)
-  const [user, setUser] = useState<string>("")
 
   const {
     register,
@@ -42,7 +41,7 @@ const ContactForm = (props: ContactFormProps) => {
   })
 
   const onSubmit: SubmitHandler<ContactFormValues> = (data) => {
-    setUser(data.name)
+    console.log(data)
 
     return emailjs
       .sendForm(
@@ -66,7 +65,7 @@ const ContactForm = (props: ContactFormProps) => {
   return (
     <Box mb={{ base: "30px", md: "50px" }}>
       {thankYou ? (
-        <Success user={user} />
+        <Success />
       ) : (
         <>
           <ParagraphText text='Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.' />

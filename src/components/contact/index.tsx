@@ -6,18 +6,18 @@ import Layout from "components/layout"
 import { MediaList } from "configs/media-list"
 
 import Address from "./address"
-// import ContactForm from "./contact-form"
+import ContactForm from "./contact-form"
 import EmailPhone from "./email-phone"
 import Map from "./map"
 import SocialMedia from "./social-media"
 
 interface ContactProps {
   select: string
-  // hover: string
+  hover: string
 }
 
 const Contact = (props: ContactProps) => {
-  const { select } = props
+  const { select, hover } = props
 
   return (
     <Layout id='contact' background='#26282b'>
@@ -55,7 +55,7 @@ const Contact = (props: ContactProps) => {
         />
       </SimpleGrid>
 
-      {/* <ContactForm hover={hover} select={select} /> */}
+      <ContactForm hover={hover} select={select} />
 
       <Map />
     </Layout>
