@@ -20,6 +20,7 @@ const FormInput = forwardRef(
         id={id}
         variant='unstyled'
         placeholder={placeholder}
+        enterKeyHint='next'
         width='100%'
         autoComplete='off'
         py='10px'
