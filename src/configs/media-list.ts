@@ -3,6 +3,7 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
+  FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa"
 
@@ -36,5 +37,11 @@ export const MediaList = [
     label: "Whatsapp",
     href: "https://wa.me/919173186323",
     icon: FaWhatsapp,
+  },
+  {
+    id: 6,
+    label: "Twitter",
+    href: "https://twitter.com/pateldaksh1520",
+    icon: FaTwitter,
   },
 ]
