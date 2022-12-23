@@ -130,8 +130,8 @@ const Banner = (props: BannerProps) => {
               letterSpacing={1}
             >
               I am a Web Developer. A Frontend focused Web Developer building
-              the Frontend of Websites and Web Applications that leads to the
-              success of the overall product.
+              the Frontend of Websites. Front-end developers use HTML, CSS,
+              JavaScript and React JS to build the client side of a website.
             </Text>
 
             <Media select={select} media={MediaList} />
