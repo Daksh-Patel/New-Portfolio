@@ -15,18 +15,20 @@ import HeaderDesktop from "./header-desktop"
 interface HeaderMobileProps {
   select: string
   hover: string
+  activeItem: string
+  setActiveItem: (activeItem: string) => void
 }
 
 const HeaderMobile = (props: HeaderMobileProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
-  const { select, hover } = props
+  const { select, hover, activeItem, setActiveItem } = props
 
   return (
     <Box
       as='header'
       position='fixed'
-      zIndex={9}
+      zIndex={999}
       top={{ base: "20px", md: "30px" }}
       left={{ base: "15px", md: "30px" }}
     >
@@ -61,7 +63,11 @@ const HeaderMobile = (props: HeaderMobileProps) => {
             }}
           />
 
-          <HeaderDesktop select={select} />
+          <HeaderDesktop
+            select={select}
+            activeItem={activeItem}
+            setActiveItem={setActiveItem}
+          />
         </DrawerContent>
       </Drawer>
     </Box>

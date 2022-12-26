@@ -8,10 +8,12 @@ import HeaderMenu from "./header-menu"
 
 interface HeaderDesktopProps {
   select: string
+  activeItem: string
+  setActiveItem: (activeItem: string) => void
 }
 
 const HeaderDesktop = (props: HeaderDesktopProps) => {
-  const { select } = props
+  const { select, activeItem, setActiveItem } = props
 
   return (
     <Box
@@ -35,7 +37,12 @@ const HeaderDesktop = (props: HeaderDesktopProps) => {
         <Logo />
 
         <Flex alignItems='center'>
-          <HeaderMenu dataList={HeaderMenuItem} select={select} />
+          <HeaderMenu
+            dataList={HeaderMenuItem}
+            select={select}
+            activeItem={activeItem}
+            setActiveItem={setActiveItem}
+          />
         </Flex>
 
         <Footer />
