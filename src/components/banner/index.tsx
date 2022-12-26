@@ -129,9 +129,10 @@ const Banner = (props: BannerProps) => {
               maxW='600px'
               letterSpacing={1}
             >
-              I am a Web Developer. A Frontend focused Web Developer building
-              the Frontend of Websites. Front-end developers use HTML, CSS,
-              JavaScript and React JS to build the client side of a website.
+              I am a Frontend Web Developer.I am From Ahmedabad, Gujarat, India.
+              A Frontend focused Web Developer building the Frontend of
+              Websites. Front-end developers use HTML, CSS, JavaScript and React
+              JS to build the client side of a website.
             </Text>
 
             <Media select={select} media={MediaList} />
