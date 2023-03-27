@@ -45,7 +45,7 @@ const PersonalDetails = (props: PersonalDetailsProps) => {
         <ParagraphText text="I am always open to challenges and constructive feedback. I am open-minded and learn new things quickly. I always keep searching for new platforms through which I can learn new things. I don't restrict myself to a single platform." />
 
         <PrimaryButton
-          href='images/daksh_resume.pdf'
+          href='images/daksh_resume_latest.pdf'
           icon={FaDownload}
           text='Download my cv'
           label='Resume'
