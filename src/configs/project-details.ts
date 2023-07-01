@@ -7,7 +7,7 @@ export const ProjectsDetails = [
     id: 1,
     image: whimstay,
     label: "whimstay",
-    href: "https://dev-hostv2.whimstay.com/",
+    href: "https://www.whimstay.com/",
   },
   {
     id: 2,

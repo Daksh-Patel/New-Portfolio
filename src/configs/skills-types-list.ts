@@ -31,22 +31,17 @@ export const SkillsTypeList = [
   },
   {
     id: 7,
-    title: "Redux / Redux Toolkit",
-    percentage: 60,
-  },
-  {
-    id: 8,
     title: "Storybook",
     percentage: 90,
   },
   {
-    id: 9,
+    id: 8,
     title: "TypeScript",
     percentage: 70,
   },
   {
-    id: 10,
+    id: 9,
     title: "GitHub",
-    percentage: 85,
+    percentage: 70,
   },
 ]

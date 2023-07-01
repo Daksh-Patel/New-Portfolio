@@ -12,7 +12,7 @@ export const PersonalDetailsList = [
   {
     id: 2,
     title: "Age",
-    text: "22",
+    text: "23",
   },
   {
     id: 3,
