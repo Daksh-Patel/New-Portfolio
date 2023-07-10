@@ -7,7 +7,7 @@ export const SkillsTypeList = [
   {
     id: 2,
     title: "Java Script",
-    percentage: 75,
+    percentage: 70,
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const SkillsTypeList = [
   },
   {
     id: 6,
-    title: "Cypress / Jest",
+    title: "Cypress",
     percentage: 60,
   },
   {
@@ -42,6 +42,11 @@ export const SkillsTypeList = [
   {
     id: 9,
     title: "GitHub",
-    percentage: 70,
+    percentage: 60,
+  },
+  {
+    id: 10,
+    title: "Tailwind CSS",
+    percentage: 85,
   },
 ]
