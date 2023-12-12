@@ -1,6 +1,6 @@
 import {
   FaAddressBook,
-  FaBriefcase,
+  // FaBriefcase,
   FaHome,
   FaRocket,
   FaUser,
@@ -28,13 +28,13 @@ export const HeaderMenuItem = [
     label: "services",
     icon: FaRocket,
   },
-  {
-    id: 4,
-    item: "Portfolio",
-    href: "#portfolio",
-    label: "portfolio",
-    icon: FaBriefcase,
-  },
+  // {
+  //   id: 4,
+  //   item: "Portfolio",
+  //   href: "#portfolio",
+  //   label: "portfolio",
+  //   icon: FaBriefcase,
+  // },
   {
     id: 5,
     item: "Contact me",

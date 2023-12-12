@@ -6,7 +6,7 @@ import { useScroll, motion } from "framer-motion"
 import About from "components/about"
 import Banner from "components/banner"
 import Contact from "components/contact"
-import Portfolio from "components/portfolio"
+// import Portfolio from "components/portfolio"
 import Services from "components/services"
 import SideBar from "components/sidebar"
 
@@ -47,9 +47,9 @@ const HomePage = () => {
 
           <Services select={select} />
 
-          <Portfolio select={select} />
+          {/* <Portfolio select={select} /> */}
 
-          <Contact select={select} hover={hover} />
+          <Contact select={select} />
         </Box>
       </HStack>
     </>
