@@ -1,17 +1,11 @@
 import { HStack } from "@chakra-ui/react"
-import { FaBriefcase, FaUser } from "react-icons/fa"
+import { FaUser } from "react-icons/fa"
 
 import PrimaryButton from "components/common/primary-button"
 
-interface BannerBtnProps {
-  hover: string
-  select: string
-}
 
-const BannerBtn = (props: BannerBtnProps) => {
-  const { hover, select } = props
 
-  return (
+const BannerBtn = () => (
     <HStack
       alignItems='center'
       flexDirection={{ base: "column", md: "row" }}
@@ -28,16 +22,16 @@ const BannerBtn = (props: BannerBtnProps) => {
         mb={{ base: "15px", md: "0" }}
       />
 
-      <PrimaryButton
+      {/* <PrimaryButton
         text='My Portfolio'
         icon={FaBriefcase}
         href='#portfolio'
         label='portfolio-btn'
         background={select}
         bgColor={hover}
-      />
+      /> */}
     </HStack>
   )
-}
+
 
 export default BannerBtn

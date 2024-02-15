@@ -137,7 +137,7 @@ const Banner = (props: BannerProps) => {
 
             <Media select={select} media={MediaList} />
 
-            <BannerBtn hover={hover} select={select} />
+            <BannerBtn />
           </Box>
         </HStack>
 
