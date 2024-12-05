@@ -1,4 +1,6 @@
-export const Education = [
+import { EducationType } from "components/about/education-and-experience/types"
+
+export const Education: EducationType[] = [
   {
     id: 1,
     degree: "Bachelor In Information Technology",
@@ -22,7 +24,7 @@ export const Education = [
   },
 ]
 
-export const Experience = [
+export const Experience: EducationType[] = [
   {
     id: 1,
     degree: "Wordpress Developer",
@@ -34,8 +36,15 @@ export const Experience = [
     id: 2,
     degree: "React Developer",
     schoolCollegeName: "Intelli Techwork LLP",
-    year: "Feb 2022",
-    badge: "Present",
-    text: "I have been working as a React Developer for the past 10 months.",
+    year: "Feb 2022 - Jan 2024",
+    text: "I worked in this company for 2 years as a React Developer.",
+  },
+
+  {
+    id: 3,
+    degree: "Software Developer (Freelance)",
+    schoolCollegeName: "Galamela India Private Limited",
+    year: "May 2024 - Jun 2024",
+    text: "I worked in this company for 2 months as a freelancer frontend Software Developer.",
   },
 ]
