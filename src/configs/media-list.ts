@@ -23,7 +23,7 @@ export const MediaList = [
   {
     id: 3,
     label: "Instagram",
-    href: "https://www.instagram.com/dakshu_15/",
+    href: "https://www.instagram.com/_.dakshu15._/",
     icon: FaInstagram,
   },
   {
