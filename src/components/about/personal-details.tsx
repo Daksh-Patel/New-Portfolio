@@ -40,7 +40,7 @@ const PersonalDetails = (props: PersonalDetailsProps) => {
           </Text>
         </Heading>
 
-        <ParagraphText text='I have 10+ months of experience as Web Developer. I am looking to work with freelancing where I can use my technical as well as personal skills to complete a task taken. I can provide an extraordinary approach to every project.' />
+        <ParagraphText text='I have 2+ years of experience as Web Developer. I am looking to work with freelancing where I can use my technical as well as personal skills to complete a task taken. I can provide an extraordinary approach to every project.' />
 
         <ParagraphText text="I am always open to challenges and constructive feedback. I am open-minded and learn new things quickly. I always keep searching for new platforms through which I can learn new things. I don't restrict myself to a single platform." />
 
